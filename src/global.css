@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+@theme{
+    --font-family-special:"Forum", serif;
+}
+
+*{
+    font-family: "Heebo", sans-serif;
+}
+
+h1{
+    font-family: "Forum", serif;
+    font-size: 3rem;
+}
+h2{
+    font-family: "Forum", serif;
+    font-size: 2rem;
+}
+h3{
+    font-size: 2rem;
+}
+h3{
+    font-size: 1.5rem;
+}
+p{
+    font-size: .8rem;
+}
+.specFont{
+    font-family: "Forum", serif;
+}
