@@ -19,7 +19,7 @@ export default function Home() {
             content: "Access local and global markets through our secure trading platforms. Our team helps you make informed decisions with real-time market intelligence and comprehensive research.",
             img: "/analyzing-stock-market-data 2.png",
             action: "Processing"
-        },
+        }, 
         {
             title: "Capital Raising",
             content: "From early-stage funding to large-scale capital projects, we provide strategic support in raising funds. Our deep network of investors and institutional partners ensures tailored capital solutions.",
@@ -29,7 +29,7 @@ export default function Home() {
     ]
     return (
         <>
-            <div className="text-white px-5 md:pl-40 h-screen relative flex md:items-center overflow-hidden">
+            <div className="text-white px-5 md:pl-40 h-[115vh] relative flex md:items-center overflow-hidden">
                 <div className="mt-20 mb-20">
                     <div className="flex items-center gap-3 w-[70vw] md:w-[30vw]">
                         <div className="border-b-2 flex-1/2" />
@@ -44,8 +44,8 @@ export default function Home() {
                     </div>
                     <p className="w-[70vw] md:w-[31vw] mt-10"> Tradebuk Capital Advisors Limited is a premier financial advisory firm dedicated to delivering Exceptional Investment Advisory Services and Solutions</p>
                 </div>
-                <div className="absolute -bottom-10 right-0  w-[60vw] md:w-[30vw]">
-                    <img className="w-full" src="a72ed2ecf5ef5912fe64cef5e09b65b9_upscayl_4x_upscayl-standard-4x.png" alt="" />
+                <div className="absolute -bottom-10 right-0  w-[60vw] md:w-[50vw]">
+                    <img className="w-full md:translate-y-[350px] md:-translate-x-[0px]" src="a72ed2ecf5ef5912fe64cef5e09b65b9_upscayl_4x_upscayl-standard-4x.png"  alt="" />
                 </div>
             </div>
             <div className="bg-[#EDEFF4] py-40 px-10 md:px-40 text-center space-y-8 flex flex-col items-center">
