@@ -1,10 +1,11 @@
 import { Icon } from "@iconify-icon/react/dist/iconify.js"
 import { useState, useRef, useEffect } from "react"
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
     const links = [
-        { name: "Tradebuk", path: "/" },
-        { name: "Advisory", path: "/about" },
+        { name: "Tradebuk", path: "/aboutus" },
+        { name: "Advisory", path: "/" },
         { name: "Updates & Insights", path: "/contact" }
     ];
     const [dropdownOpen, setDropdownOpen] = useState(false);
@@ -23,10 +24,12 @@ export default function Navbar() {
         };
     }, [dropdownOpen]);
     return (
-        <nav className="pt-6 md:pt-0 ">
+        <nav className="pt-6 md:pt-0 pb-6 md:pb-0">
             <div className="flex justify-between items-center">
                 <div className="pl-5 md:pl-12 w-20 md:w-28">
-                    <img src="/logo.png" alt="" />
+                    <Link to="/">
+                        <img src="/logo.png" alt="Tradebuk Logo" className="w-full h-full object-cover" />
+                    </Link>
                 </div>
                 <div className="hidden md:block space-x-8 text-white">
                     {
@@ -44,7 +47,7 @@ export default function Navbar() {
                 </div>
                 <div className="mr-5 relative block md:hidden">
                     <button onClick={() => setDropdownOpen((open) => !open)} aria-label="Open menu">
-                        <Icon icon="ic:round-menu" width="40" height="40" className="text-white"/>
+                        <Icon icon="ic:round-menu" width="40" height="40" className="text-white" />
                     </button>
                     {dropdownOpen && (
                         <div ref={dropdownRef} className="absolute top-full w-max -right-0 bg-black/50 rounded-2xl overflow-clip mt-5 z-50">
