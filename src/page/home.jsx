@@ -5,31 +5,31 @@ export default function Home() {
         {
             title: "Financial Advisory",
             content: "At Tradebuk Capital, we provide expert financial advice designed to create a lasting impact on your wealth and future. Our seasoned advisors offer personalized strategies to help you achieve your financial goals with confidence and clarity. Trust us to guide you through every step of your financial journey.",
-            img: "/",
+            img: "/african-man-black-suit 2.png",
             action: "Learn More"
         },
         {
             title: "Asset Management",
             content: "Our asset management solutions are tailored to help you build and protect long-term wealth. Through disciplined investment strategies and ongoing monitoring, we strive to meet your financial aspirations.",
-            img: "/",
+            img: "/c.png",
             action: "Processing"
         },
         {
             title: "Security Trading",
             content: "Access local and global markets through our secure trading platforms. Our team helps you make informed decisions with real-time market intelligence and comprehensive research.",
-            img: "/",
+            img: "/analyzing-stock-market-data 2.png",
             action: "Processing"
         },
         {
             title: "Capital Raising",
             content: "From early-stage funding to large-scale capital projects, we provide strategic support in raising funds. Our deep network of investors and institutional partners ensures tailored capital solutions.",
-            img: "/",
+            img: "/buildong-chart-up-tablet-3d-rendering_35719-1855_upscayl_4x_upscayl-standard-4x 2.png",
             action: "Processing"
         }
     ]
     return (
         <>
-            <div className="text-white px-5 md:pl-40 h-[100vh] relative flex items-center ">
+            <div className="text-white px-5 md:pl-40 h-screen relative flex md:items-center overflow-hidden">
                 <div className="mt-20 mb-20">
                     <div className="flex items-center gap-3 w-[70vw] md:w-[30vw]">
                         <div className="border-b-2 flex-1/2" />
@@ -43,6 +43,9 @@ export default function Home() {
                         <div className="border-b-2 flex-1/2" />
                     </div>
                     <p className="w-[70vw] md:w-[31vw] mt-10"> Tradebuk Capital Advisors Limited is a premier financial advisory firm dedicated to delivering Exceptional Investment Advisory Services and Solutions</p>
+                </div>
+                <div className="absolute -bottom-10 right-0  w-[60vw] md:w-[30vw]">
+                    <img className="w-full" src="a72ed2ecf5ef5912fe64cef5e09b65b9_upscayl_4x_upscayl-standard-4x.png" alt="" />
                 </div>
             </div>
             <div className="bg-[#EDEFF4] py-40 px-10 md:px-40 text-center space-y-8 flex flex-col items-center">
@@ -74,13 +77,13 @@ export default function Home() {
                                             </h3>
                                         )}
                                         <p className="mx-5 md:mx-0 md:mt-7">{item.content}</p>
-                                        <div className={`flex items-center justify-end md:justify-start mt-5 ${item.action === "Processing" ? "text-gray-500" : ""}`}>
+                                        <div className={`mx-5 md:mx-0 flex items-center justify-end md:justify-start mt-5 ${item.action === "Processing" ? "text-gray-500" : ""}`}>
                                             <p>{item.action}</p>
                                             <Icon icon="ic:round-arrow-forward" width="20" height="20" className="inline-block ml-2" />
                                         </div>
                                     </div>
                                     <div className="w-full md:w-[600px] h-[70vh] md:h-[90vh] mt-20 bg-gray-500">
-
+                                        <img src={item.img} alt={item.title} className="w-full h-full object-cover" />
                                     </div>
                                 </div>
                             )
@@ -89,7 +92,7 @@ export default function Home() {
                 </div>
             </div>
 
-            <div className="h-[80vh] md:h-[100vh] flex items-end md:items-center md:px-[10vw]">
+            <div className="h-[80vh] md:h-[100vh] flex items-end md:items-center md:px-[10vw] bg-[url('/bo.png')] bg-cover bg-center">
                 <div className="w-[80vw] px-5 mb-10 md:w-[35vw]">
                     <h2 className="text-white">
                         “An investment in knowledge pays the best interest.”
@@ -134,7 +137,9 @@ export default function Home() {
                     <div className="border-b-2 flex-1/2" />
                     <p>Our teams focus on the overall picture, establishing priorities and coordinating activities and participants to ensure quality projects that are delivered safely, on time and within budget</p>
                 </div>
-                <div className="h-[70vh] md:h-screen md:w-[80vw] mt-20 md:mt-0 bg-gray-500" />
+                <div className="h-[70vh] md:h-screen md:w-[80vw] mt-20 md:mt-0">
+                    <img src="/Happy-Investors-Complete-Controller 1.png" alt="Happy Investors" className="w-full h-full object-cover" />
+                </div>
 
             </div>
 
@@ -168,28 +173,32 @@ export default function Home() {
                     <p>Don’t miss a thing with our monthly newsletter.</p>
                 </div>
                 <div className="overflow-x-scroll hideScrollbar">
-                    <div className=" mx- mt-10 md:mt-0 grid grid-cols-[300px_300px_300px] md:grid-cols-[500px_500px_500px] bg-amber-400">
-                        <div className="h-[60vh] md:h-[90vh] flex items-end bg-red-400">
-                            <div className="w-[280px] mb-10 ml-10 ">
+                    <div className="mt-10 md:mt-0 grid grid-cols-[300px_300px_300px] md:grid-cols-[500px_500px_500px] ">
+                        <div className="h-[60vh] md:h-[90vh] flex relative bg-[url('f260730ef86b6349b9a117f75f320f1c_upscayl_4x_upscayl-standard-4x.png')] bg-cover bg-center">
+                            <div className="absolute inset-0 bg-black/50" />
+                            <div className="w-[280px] mb-10 ml-10 absolute z-10 text-white bottom-0">
                                 <h2>Investment <br />
                                     Planning </h2>
-                                <p>Our teams focus on the overall picture, establishing priorities and coordinating activities and </p>
+                                <p className="w-[80%] md:w-[100%]">Our teams focus on the overall picture, establishing priorities and coordinating activities and </p>
                             </div>
                         </div>
-                        <div className="h-[60vh] md:h-[90vh] flex items-end bg-red-400">
-                            <div className="w-[280px] mb-10 ml-10 ">
-                                <h2>Investment <br />
-                                    Planning </h2>
-                                <p>Our teams focus on the overall picture, establishing priorities and coordinating activities and </p>
+                        <div className="h-[60vh] md:h-[90vh] flex relative">
+                            <img src="/Mask group.png" alt="Research" className="absolute inset-0 w-full h-full object-cover" />
+                            <div className="absolute inset-0 bg-black/50" />
+                            <div className="w-[280px] mb-10 ml-10 absolute z-10 text-white bottom-0">
+                                <h2>Research </h2>
+                                <p className="w-[80%] md:w-[100%]">Our teams focus on the overall picture, establishing priorities and coordinating activities </p>
                             </div>
                         </div>
-                        <div className="h-[60vh] md:h-[90vh] flex items-end bg-red-400">
-                            <div className="w-[280px] mb-10 ml-10 ">
-                                <h2>Investment <br />
-                                    Planning </h2>
-                                <p>Our teams focus on the overall picture, establishing priorities and coordinating activities and </p>
+                        <div className="h-[60vh] md:h-[90vh] flex relative bg-[url('/0932340d989178d3aac01bc9d2e7f542.png')] bg-cover bg-center">
+                            <div className="absolute inset-0 bg-black/50" />
+                            <div className="w-[280px] mb-10 ml-10 absolute z-10 text-white bottom-0">
+                                <h2>Market <br />
+                                    Analysis </h2>
+                                <p className="w-[80%] md:w-[100%]">Our teams focus on the overall picture, establishing priorities and coordinating activities and </p>
                             </div>
                         </div>
+
                     </div>
                 </div>
             </div>
