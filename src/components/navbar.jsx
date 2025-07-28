@@ -41,9 +41,11 @@ export default function Navbar() {
                     }
                 </div>
                 <div className="hidden md:block">
-                    <button className="bg-[#2278BA]  px-12 text-white py-7">
-                        Get in touch
-                    </button>
+                    <Link to="/contactus">
+                        <button className="bg-[#2278BA]  px-12 text-white py-7">
+                            Get in touch
+                        </button>
+                    </Link>
                 </div>
                 <div className="mr-5 relative block md:hidden">
                     <button onClick={() => setDropdownOpen((open) => !open)} aria-label="Open menu">
@@ -59,9 +61,12 @@ export default function Navbar() {
                                 ))}
                             </div>
                             <div className="rounded-b-2xl bg-[#2278BA]">
-                                <button className="text-xl font-medium text-white px-10 py-5 text-center w-full" onClick={() => setDropdownOpen(false)}>
-                                    Get in touch
-                                </button>
+
+                                <Link to="/contactus">
+                                    <button className="text-xl font-medium text-white px-10 py-5 text-center w-full" onClick={() => setDropdownOpen(false)}>
+                                        Get in touch
+                                    </button>
+                                </Link>
                             </div>
                         </div>
                     )}
