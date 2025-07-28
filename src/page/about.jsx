@@ -25,7 +25,7 @@ export default function About() {
                         </div>
                     </div>
 
-                    <div className="h-[90vh] w-[85vw] bg-[url(md.png)] bg-cover bg-center mt-16" />
+                    <div className="h-[90vh] w-[85vw] bg-[url('/md.png')] bg-cover bg-center mt-16" />
 
                 </div>
 
