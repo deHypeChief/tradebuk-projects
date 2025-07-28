@@ -13,8 +13,8 @@ export default function About() {
                     </div>
                 </div>
 
-                <div className="bg-white py-20 md:py-40 md:pb-40 md:flex md:items-center md:justify-between px-40 gap-20">
-                    <div className="space-y-10 px-10 w-[60vw]">
+                <div className="bg-white py-20 md:py-40 md:pb-40 md:flex md:items-center md:justify-between px-5 md:px-40 gap-20">
+                    <div className="space-y-10 px-10 md:w-[60vw]">
                         <div className="space-y-5">
                             <h2>Our Approach</h2>
                             <p>TRADEBUK offers comprehensive consulting services designed to enhance organizational performance and drive sustainable growth. Our strategic approach helps businesses identify opportunities, optimize operations, and achieve measurable results in a competitive landscape.</p>

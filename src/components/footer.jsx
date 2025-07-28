@@ -28,7 +28,7 @@ export default function Footer() {
                         <p className="md:w-[30vw]">Stay updated with the latest news & insights. Enter your email to subscribe.</p>
                         <div className="my-5 flex gap-2">
                             <div>
-                                <input type="text" name="" id="" className="bg-white text-black py-3 px-6 rounded-l-full md:w-[30vw]" placeholder="Email Address" />
+                                <input type="text" name="" id="" className="bg-white text-black py-3 px-6 rounded-l-full w-full md:w-[30vw]" placeholder="Email Address" />
                             </div>
                             <div>
                                 <button className="py-3 pr-6 pl-10 bg-[#2278BA] rounded-r-full">Submit</button>

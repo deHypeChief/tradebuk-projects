@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 export default function Navbar() {
     const links = [
         { name: "Tradebuk", path: "/aboutus" },
-        { name: "Advisory", path: "/" },
+        { name: "Advisory", path: "/" }, 
         { name: "Updates & Insights", path: "/contact" }
     ];
     const [dropdownOpen, setDropdownOpen] = useState(false);
@@ -34,9 +34,9 @@ export default function Navbar() {
                 <div className="hidden md:block space-x-8 text-white">
                     {
                         links.map((link, index) => (
-                            <a key={index} href={link.path} className="">
+                            <Link key={index} to={link.path} className="">
                                 {link.name}
-                            </a>
+                            </Link>
                         ))
                     }
                 </div>
@@ -56,7 +56,7 @@ export default function Navbar() {
                             <div className="text-white text-right px-10 pt-5 py-10 space-y-5">
                                 {links.map((link, idx) => (
                                     <div key={idx}>
-                                        <a href={link.path} className="text-2xl block" onClick={() => setDropdownOpen(false)}>{link.name}</a>
+                                        <Link to={link.path} className="text-2xl block" onClick={() => setDropdownOpen(false)}>{link.name}</Link>
                                     </div>
                                 ))}
                             </div>
