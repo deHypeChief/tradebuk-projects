@@ -174,7 +174,7 @@ export default function Home() {
                 </div>
                 <div className="overflow-x-scroll hideScrollbar">
                     <div className="mt-10 md:mt-0 grid grid-cols-[300px_300px_300px] md:grid-cols-[500px_500px_500px] ">
-                        <div className="h-[60vh] md:h-[90vh] flex relative bg-[url('f260730ef86b6349b9a117f75f320f1c_upscayl_4x_upscayl-standard-4x.png')] bg-cover bg-center">
+                        <div className="h-[60vh] md:h-[90vh] flex relative bg-[url('/f260730ef86b6349b9a117f75f320f1c_upscayl_4x_upscayl-standard-4x.png')] bg-cover bg-center">
                             <div className="absolute inset-0 bg-black/50" />
                             <div className="w-[280px] mb-10 ml-10 absolute z-10 text-white bottom-0">
                                 <h2>Investment <br />
