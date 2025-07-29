@@ -33,8 +33,9 @@ export default function ContactUs() {
                         </div>
                     </div>
                 </div>
-
-                <div className="h-[60vh] md:h-[80vh] bg-[url('/veionv.png')] bg-cover bg-center"/>
+                <div className="bg-[#2F3642]">
+                    <div className="h-[60vh] md:h-[80vh] bg-[url('/veionv.png')] bg-cover bg-center" />
+                </div>
             </div>
         </div>
     )
